@@ -4,7 +4,7 @@ import joblib
 import streamlit as st
 from sklearn.preprocessing import LabelEncoder
 
-st.set_page_config(page_title="Heart Disease Prediction App")
+st.set_page_config(page_title="Heart Disease Prediction App", initial_sidebar_state='collapsed')
 def main():
 
     right, left = st.columns(2)
