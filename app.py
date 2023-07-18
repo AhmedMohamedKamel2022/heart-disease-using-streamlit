@@ -111,7 +111,7 @@ def main():
     scaler = joblib.load("Models/scaler.h5")
 
     scaled_data = scaler.transform(df)
-    prediction = model.predict(scaled_data)
+    prediction = model.predict(scaled_data)[0]
 
     if st.sidebar.button('Predict'):
     
